@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+   <center> <h1>Image Classifier</h1>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  </center>
+  <center>  <!-- For adding training images to the model. -->
+    <button type="button" class="btn btn-success" id="class-a">Add A</button>
+    <button type="button" class="btn btn-success" id="class-b">Add B</button>
+    <button type="button" class="btn btn-success" id="class-c">Add C</button>
+    <!-- Load index.js after the content of the page -->
+  </center>
+
+  
+    <script src="index.js"></script>
+  </body>
+<footer>
+</footer>
+</html>
